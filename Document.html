@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5503/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Document_files/app.css">
+</head>
+<body>
+    <div id="nav">
+        <div class="logo"><img src="./Document_files/images.png" alt="logo" width="60px"></div>
+        <div class="navbar">
+            <ul>
+                <li><a href="http://127.0.0.1:5503/index.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5503/index.html">About</a></li>
+                <li><a href="http://127.0.0.1:5503/index.html">Courses</a></li>
+                <li><a href="http://127.0.0.1:5503/index.html">Projects</a></li>
+                <li id="pages"><a href="http://127.0.0.1:5503/index.html">Pages</a>
+                    <ul>
+                        <li><a href="http://127.0.0.1:5503/index.html">page1</a></li>
+                        <li><a href="http://127.0.0.1:5503/index.html">page2</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://127.0.0.1:5503/index.html">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bg">
+      
+    <div class="img"><img src="./Document_files/gal.jpg" alt="">
+        <p class="pa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consectetur expedita eveniet, praesentium laudantium deserunt officia excepturi hic magnam magni quidem autem exercitationem iste tempora asperiores repellendus modi voluptatibus at?
+        </p>
+    </div>
+    
+    </div>
+    <footer id="f1">
+    <div id="footer"> 
+        <div id="text"><h3>quick search to the courses</h3></div> 
+        <!-- <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum animi corrupti ipsum, fugit magni at reiciendis explicabo doloremque? Amet asperiores aliquam pariatur ipsam sint, similique fugiat ipsum iusto. Consequuntur, voluptatibus.</h4> -->
+        <div id="s-bar">  <input type="text" placeholder="Search Course"><button id="sbtn">Search</button>  </div>
+</div>
+</footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
